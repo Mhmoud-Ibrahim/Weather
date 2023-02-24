@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+<header id="home">
+    <nav class="navbar navbar-expand-lg  py-4 bg-black">
+  <div class="container-fluid px-5 ">
+    <a class="navbar-brand w-25 d-flex justify-content-center" href="#"> 
+        <img class="w-25 m-2" src="imgs/logo@2x.png" alt="">
+        <div class="logo ">
+        <h6 class="text-light"> Weather</h6>
+        <p class="text-muted">tagline goes here</p>
+        </div>
+        </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav  ms-auto">
+        <li class="nav-item px-3">
+          <a class="nav-link active px-2 py-1 px-1 text-white " aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item px-3"> 
+          <a class="nav-link px-4 py-1" href="#news">News</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link px-4 py-1" href="#">Live cameras</a>
+        </li>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link px-4 py-1" href="#">Photos</a>
+        </li>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link px-4 py-1" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<section id="home" class=" vh-100 p-4 bg-black" >
+<div class="weather-content p-4">
+<input id="search" class="bg-black p-3 m-4 m-auto w-100 border-0  "  placeholder="Find Your Location"  type="text" >
+ <input   type="button" class="btn btn-info rounded-pill px-4 py-2 " name="" value="Find" id="submit">
+ <div class="container mt-5 ">
+<div class="forecast-container  row" id="forecast">
+<div class="today forecast  p-0 col-md-4">
+<div class="forecast-header p-2  d-flex justify-content-between" id="today">
+<div  id="theday" class="day"></div>
+<div id="date"  class=" date"></div><span id="month" ></span>
+</div>
+<div class="forecast-content py-5 p-3" id="current">
+<div id="location" class="location "></div>
+<div class="degree d-flex justify-content-evenly align-items-center">
+<div id="temp"  class="num">10<sup>o</sup>C</div>
+<div  class="forecast-icon">
+    <img src="imgs/116.png" alt="" width="90">
+</div></div>
+<div id="text" class="custom ">Clear</div>
+<div class="percentage mt-5    m-auto  d-flex">
+    <span><img src="imgs/icon-umberella@2x.png" alt="">20%</span>
+        <span><img src="imgs/icon-wind@2x.png" alt="">18km/h</span>
+        <span id="widdir" ><img   src="imgs/icon-compass@2x.png" alt="">East</span>
+</div></div></div>
+
+
+<div class="today forecast tomorrow p-0 col-md-4">
+<div class="forecast-header2 text-center p-2" >
+<div id="day2" class="day"></div></div> 
+<div class="forecast-content" id="current">
+  <div class="degree text-center py-4">
+  <div class="forecast-icon">
+  <img id="forcasticon1" src="imgs/113.png" alt="" width="90"></div>	
+  <div id="forcast1" class="num fs-1 m-3">14<sup>o</sup>C</div>
+  <div id="max1">10.5<sup>o</sup>C</div>
+  <div  id="custom">Clear</div>
+  </div></div></div>	
+
+<div class="today forecast  p-0 col-md-4">
+<div class="forecast-header text-center p-2" >
+<div id="day3" class="day"></div></div> 
+<div class="forecast-content py-4" id="current">
+  <div class="degree text-center">
+  <div class="forecast-icon">
+  <img id="forcasticon2" src="imgs/113.png" alt="" width="90"></div>	
+  <div id="forcast2" class="num fs-1 m-3">14<sup>o</sup>C</div>
+  <div id="max">10.5<sup>o</sup>C</div>
+  <div id="custom2">Clear</div>
+  </div></div></div></div></div></div>
+  </section>
+
+ <!-- footer -->
+  <footer class="footer mt-5 p-4 h-25">
+    <div class="submition row p-2 text-white">
+<div class="col-md-8 position-relative ">
+  <input id="submitd"  class="bg-black p-3 m-4 rounded-pill m-auto w-100 border-0  " placeholder="Enter Your Email"  type="text" >
+ <input type="submit" class="btn subscribeBtn btn-info rounded-pill px-3 py-2 " name="" value="Subscribe" id="submit">
+</div>
+<div class=" col-md-4 social  d-flex justify-content-center  align-items-center ">
+<i class="fab fa-facebook-f text-white rounded-circle  p-2 m-2" ></i>
+<i class="fab fa-twitter text-white rounded-circle  p-2 m-2" ></i>
+<i class="fab fa-google-plus text-white rounded-circle  p-2 m-2" ></i>
+<i class="fab fa-pinterest text-white rounded-circle  p-2 m-2"  ></i>
+</div>
+  </div>
+  <p class=" mt-4 px-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+  </footer>
+<script src="js/bootstrap.bundle.js" ></script>
+   <script src="js/index.js" ></script>
+</body>
+</html>
